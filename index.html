@@ -13,7 +13,7 @@
 <img class="hero-logo" src="/logo-full.png" alt="Unscripted Worlds" width="900" height="312">
 <span class="pill">Personal publishing tool</span>
 <h1>Unscripted Worlds Uploader</h1>
-<p class="lede">The small program Victor Bastos uses to upload original videos to the <a href="https://www.youtube.com/@Unscripted.Worldss">Unscripted Worlds</a> YouTube channel.</p>
+<p class="lede">The small program Victor Bastos uses to upload original videos to the <a href="https://www.youtube.com/@Unscripted.Worldss">Unscripted Worlds</a> accounts on YouTube and TikTok.</p>
 
 <div class="card"><strong>What Unscripted Worlds makes:</strong> short videos about a tiny simulated civilization, a village of simple
 computer-controlled characters who farm, trade and try to survive, and the experiments run on it. Every video is produced by the
@@ -22,20 +22,25 @@ operator from original simulation data.</div>
 <h2>What the uploader does</h2>
 <ul>
 <li>Runs only on the operator's own computer. There is no website login, no server and no other users.</li>
-<li>When the operator asks it to, it uploads one finished video to the Unscripted Worlds channel with its title, description, tags and privacy setting.</li>
-<li>Before uploading, it reads the channel's name to confirm it is connected to the right account.</li>
+<li>When the operator asks it to, it uploads one finished video to the Unscripted Worlds YouTube channel or TikTok account with its title, caption and privacy setting.</li>
+<li>Before uploading, it reads the account's name to confirm it is connected to the right account.</li>
 </ul>
 
-<h2>Google and YouTube data</h2>
+<h2>YouTube data</h2>
 <p>The uploader signs in with Google OAuth and asks for two YouTube permissions: <code>youtube.upload</code> (upload videos) and
 <code>youtube.readonly</code> (read the channel's name). It does not read comments, subscribers, analytics or any other account data,
 and it never shares Google user data with anyone. Details are in the <a href="/privacy.html">Privacy Policy</a>.
 This tool uses YouTube API Services; see the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>.</p>
 
+<h2>TikTok data</h2>
+<p>The uploader signs in with TikTok Login Kit and uses the Content Posting API with three permissions: <code>user.info.basic</code>
+(read the account's display name), <code>video.upload</code> (send a video to the account's TikTok inbox as a draft) and <code>video.publish</code>
+(post a video). It reads no followers, messages, comments or analytics, and never shares TikTok user data with anyone.</p>
+
 <p><a href="/privacy.html">Privacy Policy</a> · <a href="/terms.html">Terms of Service</a> · <a href="mailto:victorhugo.o.bastos@gmail.com">Contact</a></p>
 
 </div></main>
 <footer><div class="wrap">Unscripted Worlds · operated by Victor Bastos, Montréal, Québec, Canada · Contact: <a href="mailto:victorhugo.o.bastos@gmail.com">victorhugo.o.bastos@gmail.com</a><br>
-Unscripted Worlds Uploader is an independent tool and is not affiliated with or endorsed by Google or YouTube. YouTube is a trademark of Google LLC.</div></footer>
+Unscripted Worlds Uploader is an independent tool and is not affiliated with or endorsed by Google, YouTube or TikTok. YouTube is a trademark of Google LLC; TikTok is a trademark of ByteDance.</div></footer>
 </body>
 </html>
